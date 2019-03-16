@@ -1,0 +1,207 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CudaCompile Include="kernel.cu" />
+    <CudaCompile Include="call.cu">
+      <Filter>sim\instructions</Filter>
+    </CudaCompile>
+    <CudaCompile Include="hydro.cu">
+      <Filter>sim\instructions</Filter>
+    </CudaCompile>
+    <CudaCompile Include="instructionParam.cu">
+      <Filter>sim\instructions</Filter>
+    </CudaCompile>
+    <CudaCompile Include="paint.cu">
+      <Filter>sim\instructions</Filter>
+    </CudaCompile>
+    <CudaCompile Include="sculpt.cu">
+      <Filter>sim\instructions</Filter>
+    </CudaCompile>
+    <CudaCompile Include="display.cu">
+      <Filter>display</Filter>
+    </CudaCompile>
+    <CudaCompile Include="thermal.cu">
+      <Filter>sim\instructions</Filter>
+    </CudaCompile>
+    <CudaCompile Include="polygon.cu">
+      <Filter>sim</Filter>
+    </CudaCompile>
+    <CudaCompile Include="mask.cu">
+      <Filter>sim\instructions</Filter>
+    </CudaCompile>
+    <CudaCompile Include="pass.cu">
+      <Filter>sim\instructions</Filter>
+    </CudaCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="globals.cpp" />
+    <ClCompile Include="tools.cpp" />
+    <ClCompile Include="camera3d.cpp">
+      <Filter>sim</Filter>
+    </ClCompile>
+    <ClCompile Include="simLayer.cu">
+      <Filter>sim</Filter>
+    </ClCompile>
+    <ClCompile Include="SimMap.cu">
+      <Filter>sim</Filter>
+    </ClCompile>
+    <ClCompile Include="simMaterial.cu">
+      <Filter>sim</Filter>
+    </ClCompile>
+    <ClCompile Include="tweakLayers.cpp">
+      <Filter>ant</Filter>
+    </ClCompile>
+    <ClCompile Include="tweakMaterials.cpp">
+      <Filter>ant</Filter>
+    </ClCompile>
+    <ClCompile Include="tweakSimpleWizard.cpp">
+      <Filter>ant</Filter>
+    </ClCompile>
+    <ClCompile Include="tweakWizard.cpp">
+      <Filter>ant</Filter>
+    </ClCompile>
+    <ClCompile Include="uibutton.cpp">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="uisprite.cpp">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="uisystem.cpp">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="tweakInit.cpp">
+      <Filter>ant</Filter>
+    </ClCompile>
+    <ClCompile Include="loadbmp.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="globals.h" />
+    <ClInclude Include="kernel.cuh" />
+    <ClInclude Include="tools.h" />
+    <ClInclude Include="call.cuh">
+      <Filter>sim\instructions</Filter>
+    </ClInclude>
+    <ClInclude Include="alignment.h">
+      <Filter>ui</Filter>
+    </ClInclude>
+    <ClInclude Include="camera3d.h">
+      <Filter>sim</Filter>
+    </ClInclude>
+    <ClInclude Include="instructionParam.cuh">
+      <Filter>sim\instructions</Filter>
+    </ClInclude>
+    <ClInclude Include="paint.cuh">
+      <Filter>sim\instructions</Filter>
+    </ClInclude>
+    <ClInclude Include="sculpt.cuh">
+      <Filter>sim\instructions</Filter>
+    </ClInclude>
+    <ClInclude Include="simLayer.cuh">
+      <Filter>sim</Filter>
+    </ClInclude>
+    <ClInclude Include="SimMap.cuh">
+      <Filter>sim</Filter>
+    </ClInclude>
+    <ClInclude Include="simMaterial.cuh">
+      <Filter>sim</Filter>
+    </ClInclude>
+    <ClInclude Include="display.h">
+      <Filter>display</Filter>
+    </ClInclude>
+    <ClInclude Include="tweakLayers.h">
+      <Filter>ant</Filter>
+    </ClInclude>
+    <ClInclude Include="tweakMaterials.h">
+      <Filter>ant</Filter>
+    </ClInclude>
+    <ClInclude Include="tweakSimpleWizard.h">
+      <Filter>ant</Filter>
+    </ClInclude>
+    <ClInclude Include="tweakWizard.h">
+      <Filter>ant</Filter>
+    </ClInclude>
+    <ClInclude Include="thermal.cuh">
+      <Filter>sim\instructions</Filter>
+    </ClInclude>
+    <ClInclude Include="uibutton.h">
+      <Filter>ui</Filter>
+    </ClInclude>
+    <ClInclude Include="uisprite.h">
+      <Filter>ui</Filter>
+    </ClInclude>
+    <ClInclude Include="uisystem.h">
+      <Filter>ui</Filter>
+    </ClInclude>
+    <ClInclude Include="polygon.cuh">
+      <Filter>sim</Filter>
+    </ClInclude>
+    <ClInclude Include="mask.cuh">
+      <Filter>sim\instructions</Filter>
+    </ClInclude>
+    <ClInclude Include="instructionDefines.h">
+      <Filter>sim\instructions</Filter>
+    </ClInclude>
+    <ClInclude Include="tweakInit.h">
+      <Filter>ant</Filter>
+    </ClInclude>
+    <ClInclude Include="loadbmp.h" />
+    <ClInclude Include="pass.cuh">
+      <Filter>sim\instructions</Filter>
+    </ClInclude>
+    <ClInclude Include="hydro.cuh">
+      <Filter>sim\instructions</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="terrain.frag">
+      <Filter>display\shaders</Filter>
+    </None>
+    <None Include="terrain.vert">
+      <Filter>display\shaders</Filter>
+    </None>
+    <None Include="tex.frag">
+      <Filter>display\shaders</Filter>
+    </None>
+    <None Include="tex.vert">
+      <Filter>display\shaders</Filter>
+    </None>
+    <None Include="ui.frag">
+      <Filter>display\shaders</Filter>
+    </None>
+    <None Include="ui.vert">
+      <Filter>display\shaders</Filter>
+    </None>
+    <None Include="wall.frag">
+      <Filter>display\shaders</Filter>
+    </None>
+    <None Include="wall.vert">
+      <Filter>display\shaders</Filter>
+    </None>
+    <None Include="water.frag">
+      <Filter>display\shaders</Filter>
+    </None>
+    <None Include="water.vert">
+      <Filter>display\shaders</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="ant">
+      <UniqueIdentifier>{61020388-19c5-47e2-806c-c7b8c205b844}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sim">
+      <UniqueIdentifier>{39e347f6-6abe-46c7-8064-c9abb74dc75d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ui">
+      <UniqueIdentifier>{e95c0f59-59ea-4802-87bf-54efbb6ec082}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sim\instructions">
+      <UniqueIdentifier>{eae66b54-9ff6-4fb1-965a-4f658343f95d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="display">
+      <UniqueIdentifier>{80e84d7f-8e18-46c4-bed9-c3b6b2ad3c36}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="display\shaders">
+      <UniqueIdentifier>{48c4ca8f-58c8-476e-99ad-99bdbe9ae795}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
